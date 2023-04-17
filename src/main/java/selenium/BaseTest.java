@@ -9,6 +9,8 @@ import org.openqa.selenium.safari.SafariDriver;
 public class BaseTest {
 
 	WebDriver getWebDriver(String browserName, String url) {
+
+		
 		WebDriver driver = null;
 		
 		switch (browserName) {

@@ -22,7 +22,7 @@ public class TC4b_LoginErrorMsg extends BaseTest {
 		
 		WebElement loginButton = driver.findElement(By.xpath("//input[@id='Login']"));
 		loginButton.click();
-		delay(1, "");
+		delay(1, "sdsds");
 		WebElement error = driver.findElement(By.id("error"));
 		String expectedError = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
 		if (expectedError.equals(error.getText())) {
@@ -31,7 +31,7 @@ public class TC4b_LoginErrorMsg extends BaseTest {
 			System.out.println("FAIL");
 		}
 		delay(2, "Test Completed");
-		driver.close();
+		driver.quit();
 	}
 	public static void main(String args[]) {
 

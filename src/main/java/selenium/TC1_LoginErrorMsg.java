@@ -31,7 +31,7 @@ public class TC1_LoginErrorMsg extends BaseTest {
 			System.out.println("FAIL");
 		}
 		delay(2, "Test Completed");
-		driver.close();
+		driver.quit();
 	}
 	public static void main(String args[]) {
 

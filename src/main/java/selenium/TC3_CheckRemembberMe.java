@@ -47,7 +47,7 @@ public class TC3_CheckRemembberMe extends BaseTest {
 			delay(8, "exception");
 			System.out.println("Got Exception" + e);
 		} finally {
-			driver.close();
+			driver.quit();
 		}
 
 	}
